@@ -1,0 +1,12 @@
+
+<ul>
+  <li *ngFor="let dish of list$ | async">
+   <button (click)='editDish(dish.id)'>Edit Dish</button>
+   <button (click)='deleteDish($event, dish.id)'>Delete Dish</button>
+    {{dish.title}}
+  </li>
+</ul>
+
+<button (click)='addDish()'>Add Dish</button>
+
+
